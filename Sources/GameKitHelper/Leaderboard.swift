@@ -8,7 +8,7 @@ import GameKit
 
 public enum Leaderboard
 {
-    static func report(_ score: Int) {
+    public static func report(_ score: Int) {
         guard Authenticate.isLoggedIn else { return }
         guard !Leaderboard.name.isEmpty else { return }
         GKLeaderboard.loadLeaderboards(IDs: [Leaderboard.name]) { (boards, error) in
@@ -21,7 +21,7 @@ public enum Leaderboard
                 }
             }
        }
-    static var name : String = ""
+    public static var name : String = ""
 }
    
 

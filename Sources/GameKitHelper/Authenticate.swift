@@ -8,7 +8,7 @@ import GameKit
 
 public enum Authenticate
 {
-    static func user() {
+    public static func user() {
            let localPlayer = GKLocalPlayer.local
            localPlayer.authenticateHandler = { vc, error in
                guard error == nil else {
@@ -20,7 +20,7 @@ public enum Authenticate
            }
        }
     
-    static var isLoggedIn : Bool { GKAccessPoint.shared.isActive }
-    static var location : GKAccessPoint.Location  = .topLeading
+    public static var isLoggedIn : Bool { GKAccessPoint.shared.isActive }
+    public static var location : GKAccessPoint.Location  = .topLeading
 }
    

@@ -8,7 +8,7 @@ import GameKit
 
 public enum Achievements
     {
-    static func report(_ achievementID: String) {
+    public static func report(_ achievementID: String) {
         guard Authenticate.isLoggedIn else { return }
         guard !achievementID.isEmpty else { return }
         GKAchievement.loadAchievements() { (achievements: [GKAchievement]?, error: Error?) in
