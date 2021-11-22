@@ -21,7 +21,7 @@ public enum Leaderboard
                 }
             }
        }
-    static var name : String = "grp.blackjack"
+    static var name : String = ""
 }
    
 

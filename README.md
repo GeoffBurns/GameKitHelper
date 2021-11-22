@@ -1,3 +1,3 @@
 # GameKitHelper
 
-A description of this package.
+Helper classes to interact with GameKit and GameCenter
